@@ -6,21 +6,27 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>🔒 Time-Locked Vault</h1>
-    <p class="subtitle">A simple Proof of Concept built for Soundness</p>
+  <div class="vault-container">
+    <header>
+      <h1>🔒 Time-Locked Vault</h1>
+      <p>A simple DeFi PoC built on <strong>Soundness</strong></p>
+    </header>
 
-    <div class="form">
-      <label>Amount to Lock:</label>
+    <div class="card">
+      <h2>Lock Your Tokens</h2>
+      <label>Amount to Lock</label>
       <input type="number" id="amount" placeholder="Enter token amount" />
 
-      <label>Lock Duration (seconds):</label>
+      <label>Lock Duration (seconds)</label>
       <input type="number" id="duration" placeholder="e.g. 30" />
 
-      <button onclick="lockTokens()">Lock</button>
+      <button onclick="lockTokens()">🚀 Lock Tokens</button>
+      <div id="status" class="status-box">Waiting for input...</div>
     </div>
 
-    <div id="status"></div>
+    <footer>
+      <p>Powered by <span class="brand">Soundness</span> Layer</p>
+    </footer>
   </div>
 
   <script src="app.js"></script>
