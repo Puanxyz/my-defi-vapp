@@ -5,7 +5,7 @@ function lockTokens() {
   const duration = document.getElementById("duration").value;
 
   if (!amount || !duration) {
-    alert("Please enter amount and duration.");
+    alert("⚠️ Please enter both amount and duration.");
     return;
   }
 
