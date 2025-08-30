@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Time-Locked Vault (PoC)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔒 Time-Locked Vault</h1>
+    <p class="subtitle">A simple Proof of Concept built for Soundness</p>
+
+    <div class="form">
+      <label>Amount to Lock:</label>
+      <input type="number" id="amount" placeholder="Enter token amount" />
+
+      <label>Lock Duration (seconds):</label>
+      <input type="number" id="duration" placeholder="e.g. 30" />
+
+      <button onclick="lockTokens()">Lock</button>
+    </div>
+
+    <div id="status"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
